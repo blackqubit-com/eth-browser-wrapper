@@ -14,7 +14,7 @@ const bundle = fs.readFileSync(bundlePath, 'utf-8');
 let html = fs.readFileSync(templatePath, 'utf-8');
 
 // Replace the placeholder with the bundled JavaScript
-html = html.replace('${BUNDLE_JS_CONTENT}', bundle);
+html = html.replace('${ BUNDLE_JS_CONTENT }', bundle);
 
 // Write the final index.html
 fs.writeFileSync(outputPath, html);

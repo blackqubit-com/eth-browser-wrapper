@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>ENS Browser Wrapper</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 40px;
-        max-width: 800px;
-      }
-      input {
-        width: 300px;
-        padding: 8px;
-        margin-right: 10px;
-      }
-      button {
-        padding: 8px 16px;
-      }
-      #content {
-        margin-top: 20px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        min-height: 200px;
-        overflow: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>ENS Browser Wrapper</h1>
-    <input type="text" id="ensInput" placeholder="Enter .eth domain" />
-    <button id="loadButton">Load Content</button>
-    <div id="content"></div>
 
-    <script>
+<head>
+  <meta charset="UTF-8" />
+  <title>ENS Browser Wrapper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      max-width: 800px;
+    }
+
+    input {
+      width: 300px;
+      padding: 8px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 8px 16px;
+    }
+
+    #content {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      min-height: 200px;
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ENS Browser Wrapper</h1>
+  <input type="text" id="ensInput" placeholder="Enter .eth domain" value="ens.eth" />
+  <button id="loadButton">Load Content</button>
+  <div id="content"></div>
+
+  <script>
       // Embedded JavaScript from bundle.min.js
-      ${BUNDLE_JS_CONTENT}
-    </script>
-  </body>
+      ${ BUNDLE_JS_CONTENT } // eslint-disable-line
+  </script>
+</body>
+
 </html>

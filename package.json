@@ -6,7 +6,7 @@
     "build": "webpack",
     "minify": "terser dist/bundle.js -o dist/bundle.min.js",
     "embed": "node embed.js",
-    "prepare": "npm run build && npm run minify && npm run embed && serve"
+    "dev": "npm run build && npm run minify && npm run embed & serve"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +17,20 @@
     "webpack-cli": "^4.7.2"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "buffer": "^6.0.3",
     "content-hash": "^2.5.2",
+    "crypto-browserify": "^3.12.1",
     "dompurify": "^3.2.3",
     "ethers": "^6.13.4",
-    "ipfs-http-client": "^60.0.1"
+    "ipfs-http-client": "^60.0.1",
+    "multiformats": "^13.3.1",
+    "peer-id": "^0.16.0",
+    "process": "^0.11.10",
+    "runes2": "^1.1.4",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5",
+    "webpack-bundle-analyzer": "^4.10.2"
   }
 }
